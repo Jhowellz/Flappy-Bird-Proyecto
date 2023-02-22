@@ -1,0 +1,29 @@
+﻿<Window x:Class="Flappy_Bird_WPF_MOO_ICT.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Flappy_Bird_WPF_MOO_ICT"
+        mc:Ignorable="d"
+        Title="PROTOTIPO1" Height="490" Width="525">
+    <Canvas Name="MyCanvas" Focusable="True" KeyDown="KeyIsDown" KeyUp="KeyIsUp" Background="LightBlue">
+
+        <Image Height="145" Width="200" Source="images/nubes_pruebas1.png" Canvas.Left="28" Canvas.Top="120" Tag="nubes_pruebas1"/>
+        <Image Height="145" Width="200" Source="images/clouds2.png" Canvas.Left="307" Canvas.Top="120" Tag="nubes_pruebas1"/>
+
+
+        <Image Height="355" Width="66" Source="images/edificio1.png" Tag="obs1" Canvas.Left="76" Canvas.Top="285" HorizontalAlignment="Center" VerticalAlignment="Top" Stretch="UniformToFill" />
+        <Image Height="390" Width="66" Source="images/inverso.png" Tag="obs1" Canvas.Left="76" Canvas.Top="-236" />
+
+        <Image Height="390" Width="66" Source="images/edificio1.png" Tag="obs2" Canvas.Left="228" Canvas.Top="405" />
+        <Image Height="390" Width="66" Source="images/inverso.png" Tag="obs2" Canvas.Left="228" Canvas.Top="-90" />
+
+        <Image Height="390" Width="66" Source="images/edificio1.png" Tag="obs3" Canvas.Left="426" Canvas.Top="285" />
+        <Image Height="390" Width="66" Source="images/inverso.png" Tag="obs3" Canvas.Left="426" Canvas.Top="-214" />
+
+        <Image Name="flappyBird" Height="33" Width="30" Source="images/buho_prueba1.png" Stretch="Fill" Canvas.Top="192" Canvas.Left="10" HorizontalAlignment="Left" VerticalAlignment="Top" />
+
+        <Label Name="txtScore" FontSize="22" FontWeight="ExtraBold" Content="Score: 0" />
+
+    </Canvas>
+</Window>
