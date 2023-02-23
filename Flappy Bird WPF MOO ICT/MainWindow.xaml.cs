@@ -38,7 +38,6 @@ namespace Flappy_Bird_WPF_MOO_ICT
             gameTimer.Tick += MainEventTimer;
             gameTimer.Interval = TimeSpan.FromMilliseconds(20);
             StartGame();
-
         }
 
         private void MainEventTimer(object sender, EventArgs e)
@@ -106,6 +105,13 @@ namespace Flappy_Bird_WPF_MOO_ICT
             if (e.Key == Key.R && gameOver == true)
             {
                 StartGame();
+            }
+
+            if(e.Key == Key.Back && gameOver == true)
+            {
+                Window1 window1 = new Window1();    
+                window1.Show();
+                Close();
             }
         }
 
